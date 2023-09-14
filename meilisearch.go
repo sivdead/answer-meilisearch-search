@@ -51,7 +51,7 @@ func (s *Search) Info() plugin.Info {
 		Description: plugin.MakeTranslator(i18n.InfoDescription),
 		Author:      "sivdead",
 		Version:     "0.0.1",
-		Link:        "https://github.com/answerdev/plugins/tree/main/search/meilisearch",
+		Link:        "https://github.com/sivdead/answer-meilisearch-search",
 	}
 }
 
