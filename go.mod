@@ -1,4 +1,4 @@
-module github.com/answerdev/plugins/search/meilisearch
+module github.com/sivdead/answer-meilisearch-search
 
 go 1.21
 
