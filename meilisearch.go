@@ -5,10 +5,10 @@ import (
 	"encoding/json"
 	"fmt"
 	"github.com/answerdev/answer/plugin"
-	"github.com/answerdev/plugins/search/meilisearch/i18n"
 	"github.com/meilisearch/meilisearch-go"
 	"github.com/segmentfault/pacman/errors"
 	"github.com/segmentfault/pacman/log"
+	"github.com/sivdead/answer-meilisearch-search/i18n"
 	"strings"
 	"sync"
 )
@@ -287,7 +287,7 @@ func (s *Search) buildQuery(cond *plugin.SearchBasicCond) (string, *meilisearch.
 	case plugin.SearchNewestOrder:
 		searchRequest.Sort = []string{"created:desc"}
 	case plugin.SearchActiveOrder:
-		searchRequest.Sort = []string{"created:desc"}
+		searchRequest.Sort = []string{"active:desc"}
 	case plugin.SearchScoreOrder:
 		searchRequest.Sort = []string{"score:desc"}
 	}
